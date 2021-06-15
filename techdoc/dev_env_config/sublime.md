@@ -15,6 +15,7 @@ CTRL + Alt + P 调出命令端
 
 - markdown 编辑插件： `Markdown Editing`
 - markdown 预览插件： `Marddown Preview`
+- 文本格式化插件： `HTML-CSS-JS Prettify` (依赖 nodejs )
 - git 插件： `git`
 
 
