@@ -1,7 +1,3 @@
-
-
-
-
 # git note 20210665 关于提交
 
 [toc]
@@ -100,6 +96,8 @@ git rebase upstream/master
 2. git add (无需git commit)
 3. git rebase --continue
 ```
+
+
 
 ## todo-read
 
