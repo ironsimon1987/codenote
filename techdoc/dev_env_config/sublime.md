@@ -9,7 +9,6 @@ CTRL + Alt + P 调出命令端
 ```
 
 
-
 推荐插件
 > 插件搜索：[https://packagecontrol.io/search/](https://packagecontrol.io/search/)
 
