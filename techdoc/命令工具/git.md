@@ -97,7 +97,38 @@ git rebase upstream/master
 3. git rebase --continue
 ```
 
+## Handling Multiple Github Accounts on MacOS
 
+https://gist.github.com/Jonalogy/54091c98946cfe4f8cdab2bea79430f9
+
+在配置文件中分别指定各自的 ssh private key；同时命名 Host 为 `github.com-{github_name}`
+
+```
+vim ~/.ssh/config
+------content below-----------
+# personal account
+Host github.com-ironsimon1987
+	HostName github.com
+	User Simon
+	IdentityFile ~/.ssh/ironsimon_personal_github
+	IdentitiesOnly yes
+
+# company account
+Host *.com
+	IdentityFile ~/.ssh/id_jyhong_github
+	User HJY
+```
+
+原本 `git@github.com:ironsimon1987/codenote.git` 修改为 `git@github.com-ironsimon1987:ironsimon1987/codenote.git`
+则命令为：
+
+```shell
+git clone git@github.com-ironsimon1987:ironsimon1987/codenote.git
+
+# 检查 remote-url
+git remote -v
+git remote set-url origin git@github.com-ironsimon1987:ironsimon1987/codenote.git
+```
 
 ## todo-read
 
