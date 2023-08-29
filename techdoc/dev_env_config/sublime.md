@@ -6,6 +6,7 @@
 
 ```
 CTRL + Alt + P 调出命令端
+opt + cmd + f 全局替换
 ```
 
 
